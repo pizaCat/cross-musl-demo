@@ -1,0 +1,12 @@
+
+[package]
+name = "rdtest"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+openssl = { version = "0.10", features = ["vendored"] }
+rdkafka = { version = "0.36.2", features = [
+  "cmake-build",
+  "ssl-vendored",
+], default-features = false }
